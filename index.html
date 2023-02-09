@@ -10,14 +10,35 @@
 <body>
     <header>
         <h1>welcome my dom</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate consequuntur sapiente impedit debitis numquam ratione quam labore eligendi, voluptatibus praesentium culpa cupiditate. Maiores iure eos eius magnam ipsum voluptatum mollitia.</p>
     </header>
     <main>
-        <h1>My awesome dom de beta</h1>
-        <ul>
-            <li>Jalai set</li>
-            <li>Shafayet</li>
-            <li>bonobash</li>
-        </ul>
+        <section>
+            <h1>My awesome dom de beta</h1>
+            <ul>
+                <li>Jalai set</li>
+                <li>Shafayet</li>
+                <li>bonobash</li>
+            </ul>
+        </section>
+
+        <section>
+            <h1 id="fruits-title">Fruits I like</h1>
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Carrot</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id="palse">palse i like visit</h1>
+            <ul>
+                <li class="important-places">sondorbon</li>
+                <li class="important-places">bandorbon</li>
+                <li class="important-places">katabon</li>
+                <li>salbon</li>
+            </ul>
+        </section>
     </main>
     <script src="js/dom.js"> </script>
     <script>
@@ -25,6 +46,12 @@
         // console.log(liCollection);
         for(const li of liCollection){
             console.log(li.innerText);
+        }
+        const toru=document.getElementById('palse').innerHTML='what a place';
+
+        const places=document.getElementsByClassName('important-places');
+        for(const place of places){
+            console.log(place.innerText);
         }
 
     </script>
