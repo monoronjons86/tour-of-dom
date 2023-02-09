@@ -21,7 +21,12 @@
     </main>
     <script src="js/dom.js"> </script>
     <script>
-        console.log('adding js inside html file')
+        const liCollection=document.getElementsByTagName('li');
+        // console.log(liCollection);
+        for(const li of liCollection){
+            console.log(li.innerText);
+        }
+
     </script>
 </body>
 </html>
