@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js dom summary</title>
+</head>
+<body>
+    <h1>Final Dom Event Handler</h1>
+    <h3 id="handalar-status">Default text</h3>
+    <input type="text">
+    <button>update</button>
+    <br>
+    <br>
+    
+    <button onclick="handleOnclick()">handle Event by Add onclick Function</button>
+    <button id="event-listener">Handle event by addlistenar</button>
+
+    <script>
+        function handleOnclick(){
+           const handlarStus=document.getElementById('handalar-status');
+           handlarStus.innerText='handle by function attached by onclick attribute';
+        }
+        //option 2
+        document.getElementById('event-listener').addEventListener('click',function(){
+            const handlarStus=document.getElementById('handalar-status');
+            handlarStus.innerText='text update by add event listner button'
+        })
+    </script>
+
+</body>
+</html>
