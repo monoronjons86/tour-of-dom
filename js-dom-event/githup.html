@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>githup html</title>
+</head>
+<body>
+    <h1 id="secret-info">my secret info</h1>
+    <input id="delete-confrm" type="text" placeholder="please type of delete">
+    <button id="btn-delete" disabled>Delete</button>
+    <script>
+        document.getElementById('delete-confrm').addEventListener('keyup',function(event){
+            const text=event.target.value;
+            console.log(text);
+            const deletButton=document.getElementById('btn-delete')
+            if(text==='delete'){
+                deletButton.removeAttribute('disabled')
+            }
+            else{
+                deletButton.setAttribute('disabled',true)
+            }
+
+
+        });
+        document.getElementById('btn-delete').addEventListener('click',function(){
+            const secret=document.getElementById('secret-info');
+            secret.style.display='none';
+
+
+        });
+    </script>
+</body>
+</html>
