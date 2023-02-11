@@ -9,11 +9,12 @@
 <body>
     <h1>Final Dom Event Handler</h1>
     <h3 id="handalar-status">Default text</h3>
-    <input type="text">
-    <button>update</button>
+    <p id="input-text-display">Default input text</p>
+    <input id="input-filed" type="text">
+    <button id="btn-update">update</button>
     <br>
     <br>
-    
+
     <button onclick="handleOnclick()">handle Event by Add onclick Function</button>
     <button id="event-listener">Handle event by addlistenar</button>
 
@@ -26,6 +27,15 @@
         document.getElementById('event-listener').addEventListener('click',function(){
             const handlarStus=document.getElementById('handalar-status');
             handlarStus.innerText='text update by add event listner button'
+        })
+        //option 2 re
+        document.getElementById('btn-update').addEventListener('click',function(){
+            const inputField=document.getElementById('input-filed');
+            const inputText=inputField.value;
+            
+            const p=document.getElementById('input-text-display');
+            p.innerText=inputText;
+            inputField.value=' ';
         })
     </script>
 
