@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more event</title>
+</head>
+<body>
+    <h1>Explore more event</h1>
+    <button id="btn-more">Events</button>
+    <input id="text-filed" type="text">
+    <script>
+        // document.getElementById('text-filed').addEventListener('focus',function(){
+        //     console.log('Even triggered inside inside the input field')
+
+        // });
+        // document.getElementById('text-filed').addEventListener('blur',function(){
+        //     console.log('Even triggered inside inside the input field blur')
+
+        // });
+        // document.getElementById('text-filed').addEventListener('keydown',function(){
+        //     console.log(event.target.value)
+
+        // });
+
+        document.getElementById('text-filed').addEventListener('keypress',function(){
+            console.log(event.target.value)
+
+        });
+
+        document.getElementById('btn-more').addEventListener('mousemove',function(){
+            console.log('Even triggered')
+
+        });
+    </script>
+</body>
+</html>
