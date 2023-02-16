@@ -7,7 +7,7 @@ document.getElementById('btn-submit').addEventListener('click',function(){
    console.log(password);
 
    if( email==='sontan@bap.com'&& password==='secret'){
-    console.log('valid user');
+    window.location.href='Bank.html'
    }
    else{
     console.log('invalid user');
