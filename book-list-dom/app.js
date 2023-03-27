@@ -11,6 +11,7 @@ btn.addEventListener('click',function(e){
     }
     else{
         const newRow=document.createElement('tr');
-        console.log(newRow);
+        //Creating new title
+        
     }
 });
